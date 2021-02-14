@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700;1,900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,700;1,900&display=swap');*/
+
+* {
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+}
+
+body {
+	font-family: "Lato", "Times New Roman", sans-serif;
+	color: #1c1c1c;
+}
+
+#footer {
+	display: block;
+	position: fixed;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: 1em;
+	bottom: 0;
+	width: 50%;
+	font-size: 10;
+	color: grey;
+	text-align: right;
+}
+
+.footer p {
+	margin-bottom: 1em;
+	font-size: 10;
+	color: grey;
+	text-align: right;
+}
+
+a {
+	text-decoration: none;
+}
+
+p a {
+	color: #464ec2;
+}
+
+#profile {
+	float: right;
+	display: inline;
+	margin-right: 80px;
+	height: auto; 
+    width: auto; 
+}
+
+#profile-pic {
+    border: 3px solid #1c1c1c;
+    max-width: 300px; 
+    max-height: 300px;
+    margin-bottom: 10px;
+}
+
+#profile-links {
+	display: flex;
+	justify-content: space-between;
+	/*border: 1px solid black;*/
+}
+
+#profile-links a {
+	color: #1c1c1c;
+}
+
+.home {
+	display: flex;
+	justify-content: space-around;
+}
+
+.home h3 {
+	margin-top: 2em;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.box {
+	background-color:yellow;
+}
+
+.nav {
+	font-size: 20px;
+	/*width: 50%;*/
+	margin: 50px 25vw 0 25vw;
+	text-decoration: none;
+}
+
+.nav a {
+	display: inline;
+	color: #1c1c1c;
+	float: left;
+    text-align: center;
+    margin: 15px 0px; /* to flush edge of menu with right boundary */
+}
+
+.nav a.active {
+	/*color: #9697ab;*/
+	border-bottom: 3px solid #1c1c1c;
+	padding-bottom: 8px;
+}
+
+.nav-right {
+    float: right;
+}
+
+.nav-right a {
+	display: inline;
+    margin: 15px 10px;
+}
+
+.nav-right a:last-child {
+	margin: 15px 0 15px 10px; /* to flush edge of menu with right boundary */
+}
+
+.nav a:hover {
+    color: #c7c8d6;
+}
+
+h1 {
+	display: inline-block;
+	font-style: italic;
+	font-weight: 900;
+	font-size: 36px;
+	margin-bottom: 0.2em;
+	background-color: #1c1c1c;
+	color: white;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 28px;
+	margin-bottom: 1em;
+}
+
+h3 {
+	font-size: 20px;
+	margin-bottom: 1em;
+}
+
+p {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.2em;
+	margin-bottom: 1em;
+}
+
+.content {
+	position: absolute;
+	margin: 150px 25vw 0 25vw;
+}
+
+
+/* art */
+
+.art-container {
+	position: absolute;
+	margin: 200px 25vw 0 25vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 60%;
+}
+
+.art-column {
+	display: flex;
+	flex-basis: 1;
+	flex-flow: row wrap;
+	/*justify-content: space-between;*/
+	overflow-y: scroll;
+	width: 48%;
+	max-width: 48%;
+
+	/* for firefox */
+  scrollbar-width: none;
+  scrollbar-color: white;
+
+}
+
+.art-column::-webkit-scrollbar {
+  width: 0;               /* width of the entire scrollbar */
+}
+
+.art-column::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+
+.art-column::-webkit-scrollbar-thumb {
+  background-color: grey;    /* color of the scroll thumb */
+  border-radius: 1px;       /* roundness of the scroll thumb */
+  border: 1px grey;  /* creates padding around scroll thumb */
+}
+
+.art-column a {
+	flex-shrink:1;
+	width: 100%;
+	color: #1c1c1c;
+	text-align: center;
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+	background-color: rgba(255, 255, 255, 0.075);
+}
+
+.art-column a img {
+	flex-shrink: 1;
+	max-width: 100%;
+}
+
+.art-column a h3 {
+	color: #1c1c1c;
+	margin: 0em;
+}
+
+.art-column a:hover {
+	background-color: rgba(255, 255, 255, 0.25);
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 #506380;
+}
+
+
