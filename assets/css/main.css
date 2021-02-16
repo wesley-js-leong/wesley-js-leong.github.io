@@ -65,6 +65,10 @@ p a {
 	color: #1c1c1c;
 }
 
+.profile-text {
+	
+}
+
 .home {
 	display: flex;
 	justify-content: space-around;
