@@ -14,13 +14,13 @@
 	</head>
 	<body>
 		<div class="nav">
-			<a href="index" class="active bold">Home</a>
+			<a href="index.html" class="active bold">Home</a>
 			<div class="nav-right">
-				<a href="publications">Publications</a>
-				<a href="presentations">Presentations</a>
-				<a href="art">Art</a>
+				<a href="publications.html">Publications</a>
+				<a href="presentations.html">Presentations</a>
+				<a href="art.html">Art</a>
 				<a href="https://drive.google.com/file/d/1Lx0XK_sWesn0fcAHxlTKpYh_bcjTSyRr/view?usp=sharing" target="_blank">CV</a>
-				<a href="contact">Contact</a>
+				<a href="contact.html">Contact</a>
 			</div>
 		</div>
  		<div class="home content">
@@ -31,7 +31,7 @@
 					<a href="https://twitter.com/wesleyjsleong" class="icon icon-twitter icon2x"></a>
 					<a href="https://linkedin.com/in/wesley-leong/" class="icon icon-linked_in  icon2x"></a>
 					<a href="https://github.com/wesley-js-leong" class="icon icon-octopus icon2x"></a>
-					<!-- <a href="google.com" class="ai ai-google-scholar ai-2x"></a> -->
+					<a href="google.com" class="ai ai-google-scholar ai-2x"></a>
 				</div>
 			</div>
 			<div>
