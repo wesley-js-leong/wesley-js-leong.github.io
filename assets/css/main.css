@@ -7,6 +7,16 @@
 	text-align: justify;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #434343;
+}
+
+::selection {
+  color: white;
+  background: #434343;
+}
+
 body {
 	font-family: "Lato", "Times New Roman", sans-serif;
 	color: #1c1c1c;
