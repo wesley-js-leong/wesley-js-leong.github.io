@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css" id="theme-link">
 		<link rel="stylesheet" href="assets/css/mfglabs_iconset.css">
 		<link rel="stylesheet" href="assets/css/academicons.min.css"/>
 	</head>
@@ -30,7 +30,21 @@
 			<p>wesley.js.leong [at] gmail [dot] com</p>
 		</div>
 		<div id="footer">
-			Last updated Feb 12, 2021
+  			<span style="float:left;"><button class="btn-darkmode">Dark/Light</button></span>
+  			<span style="float:right;">Last updated Feb 12, 2021</span>
 		</div>
+	    <script>
+	      const btn = document.querySelector(".btn-darkmode");
+	      const theme = document.querySelector("#theme-link");
+	      btn.addEventListener("click", function() {
+	        // Swap out the URL for the different stylesheets
+	        if (theme.getAttribute("href") == "assets/css/main.css") {
+	          theme.href = "assets/css/dark.css";
+	        } else {
+	          theme.href = "assets/css/main.css";
+	        }
+	      });
+	    </script>
+
 	</body>	
 </html>	
