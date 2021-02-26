@@ -13,26 +13,11 @@
 		<link rel="stylesheet" href="assets/css/academicons.min.css"/>
 
 	    <script>
-	      const btn = document.querySelector(".btn-darkmode");
-	      const theme = document.querySelector("#theme-link");
-	      btn.addEventListener("click", function() {
-	        // Swap out the URL for the different stylesheets
-	        if (theme.getAttribute("href") == "assets/css/main.css") {
-	          theme.href = "assets/css/dark.css";
-	          localStorage.setItem('theme', 'dark.css');
-	        } else {
-	          theme.href = "assets/css/main.css";
-	          localStorage.setItem('theme', 'main.css');
-	        }
-	      });
-
-
 		  document.addEventListener('DOMContentLoaded', () => {
 
-		    const themeStylesheet = document.getElementById('theme');
 		    const storedTheme = localStorage.getItem('theme');
 		    if(storedTheme){
-		        themeStylesheet.href = storedTheme;
+		        theme.href = storedTheme;
 		    }
 		})
 	    </script>
@@ -76,7 +61,20 @@
   			<span style="float:left;"><button class="btn-darkmode">Dark/Light</button></span>
   			<span style="float:right;">Last updated Feb 12, 2021</span>
 		</div>
-
+		<script>
+	    	const btn = document.querySelector(".btn-darkmode");
+	    	const theme = document.querySelector("#theme-link");
+	    	btn.addEventListener("click", function() {
+	    		// Swap out the URL for the different stylesheets
+		        if (theme.getAttribute("href") == "assets/css/main.css") {
+		        	theme.href = "assets/css/dark.css";
+		        	localStorage.setItem('theme', 'assets/css/dark.css');
+		        } else {
+		        	theme.href = "assets/css/main.css";
+		        	localStorage.setItem('theme', 'assets/css/main.css');
+		        }
+	      	});
+		</script>
 
 
 	</body>	
