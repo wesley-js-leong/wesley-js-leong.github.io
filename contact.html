@@ -15,13 +15,14 @@
 		<link rel="stylesheet" href="assets/css/academicons.min.css"/>
 
 	    <script>
-		  document.addEventListener('DOMContentLoaded', () => {
-
-		    const storedTheme = localStorage.getItem('theme');
-		    if(storedTheme){
-		        theme.href = storedTheme;
-		    }
-		})
+	    	if (localStorage.getItem('theme') !== null) {
+			  	document.addEventListener('DOMContentLoaded', () => {
+			    	const storedTheme = localStorage.getItem('theme');
+			    	if(storedTheme){
+			        	theme.href = storedTheme;
+			    	}
+			  	})
+			}
 	    </script>
 
 	</head>
