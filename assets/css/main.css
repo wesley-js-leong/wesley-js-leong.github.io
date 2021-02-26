@@ -30,8 +30,11 @@ body {
 	margin-bottom: 1em;
 	bottom: 0;
 	width: 50%;
-	font-size: 10;
-	color: grey;
+}
+
+.footer-text {
+	color: #adadad;
+	font-size: 14px;
 }
 
 .btn-darkmode {
