@@ -16,6 +16,30 @@
   background: #f5f5f5;
 }
 
+.nav-mobile {
+	background-color: #c4c4cc;
+}
+
+.drop-button {
+	color: #181924;
+	background-color: #c4c4cc;
+}
+
+.drop-button:focus {
+	color: #3c3e59;
+}
+
+.dropdown-content {
+	border-right: 2px solid #c4c4cc;
+	border-bottom: 2px solid #c4c4cc;
+	border-left: 2px solid #c4c4cc;
+	background-color: #181924;
+}
+
+.dropdown-content a {
+	color: #c4c4cc;
+}
+
 body {
 	background-color: #181924;
 	color: #c4c4cc;
