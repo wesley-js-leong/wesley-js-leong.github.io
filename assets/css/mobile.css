@@ -162,28 +162,30 @@ a {
 	margin: 15px 0 15px 10px; /* to flush edge of menu with right boundary */
 }
 
+
+/* font settings */
 h1 {
 	display: inline-block;
 	font-style: italic;
 	font-weight: 900;
-	font-size: 6vw;
+	font-size: 8vw;
 	margin-bottom: 0.2em;
 }
 
 h2 {
 	font-weight: 700;
-	font-size: 4.5vw;
+	font-size: 6.5vw;
 	margin-bottom: 1em;
 }
 
 h3 {
-	font-size: 3.5vw;
+	font-size: 5.5vw;
 	margin-bottom: 1em;
 }
 
 p {
 	font-weight: 400;
-	font-size: 3vw;
+	font-size: 5vw;
 	line-height: 1.2em;
 	margin-bottom: 1em;
 }
