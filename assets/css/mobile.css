@@ -14,21 +14,67 @@ body {
 	font-family: "Lato", "Times New Roman", sans-serif;
 }
 
-.nav-mobile {
+.nav-desktop {
 	display: none;
+}
+
+.nav-mobile {
+	padding: 2vw 10% 0 10%;
+	width: 80%;
+	max-width: 80%;
+	background-color: #1c1c1c;
+	text-align: right;
+}
+
+.drop-button {
+	border: none;
+	outline: none;
+	color: white;
+	background-color: #1c1c1c;
+	margin: 0;
+	padding-bottom: 2vw;
+}
+
+.drop-button:focus {
+	color: grey;
+}
+
+.dropdown-content {
+	display: none;
+	position: relative;
+	background-color: #f9f9f9;
+	width: 100%;
+	max-width: 100%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	font-size: 4vw;
+}
+
+.show {
+	display: block;
+	float: right;
 }
 
 #footer {
 	display: block;
 	position: fixed;
-	margin-left: 25%;
-	margin-right: 25%;
-	margin-bottom: 1em;
-	bottom: -20px;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 1vw;
+	bottom: 0;
+	width: 80%;
+	bottom: -10px;
 	padding-top: 10px;
 	padding-bottom: 20px;
-	width: 50%;
-	z-index: 5;
 }
 
 .footer-text {
@@ -48,14 +94,19 @@ a {
 }
 
 #profile {
-	margin-right: 80px;
-	height: auto; 
-    width: auto; 
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	/*height: auto; */
+	width: 40%;
+	max-width: 16em;
+	margin-bottom: 10vw;
+	/*background-color: yellow;*/
 }
 
 #profile-pic {
-    max-width: 300px; 
-    max-height: 300px;
+    max-width: 16em; 
+    height: auto;
     margin-bottom: 10px;
 }
 
@@ -66,7 +117,9 @@ a {
 
 .home {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-around;
+	align-items: center;
 }
 
 .home h3 {
@@ -77,10 +130,14 @@ a {
 	font-weight: 700;
 }
 
+.bold900 {
+	font-weight: 900;
+}
+
 .nav {
 	font-size: 20px;
 	/*width: 50%;*/
-	margin: 50px 25vw 0 25vw;
+	margin: 50px 10vw 0 10vw;
 	text-decoration: none;
 }
 
@@ -93,7 +150,7 @@ a {
 
 .nav a.active {
 	/*color: #9697ab;*/
-	border-bottom: 3px solid #1c1c1c;
+	font-weight: 700;
 	padding-bottom: 8px;
 }
 
@@ -118,31 +175,31 @@ h1 {
 	display: inline-block;
 	font-style: italic;
 	font-weight: 900;
-	font-size: 36px;
+	font-size: 6vw;
 	margin-bottom: 0.2em;
 }
 
 h2 {
 	font-weight: 700;
-	font-size: 28px;
+	font-size: 4.5vw;
 	margin-bottom: 1em;
 }
 
 h3 {
-	font-size: 20px;
+	font-size: 3.5vw;
 	margin-bottom: 1em;
 }
 
 p {
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 3vw;
 	line-height: 1.2em;
 	margin-bottom: 1em;
 }
 
 .content {
 	position: absolute;
-	margin: 150px 25vw 0 25vw;
+	margin: 15vw 10vw 0 10vw;
 }
 
 
@@ -150,7 +207,7 @@ p {
 
 .art-container {
 	position: absolute;
-	margin: 200px 25vw 0 25vw;
+	margin: 200px 10vw 0 10vw;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;

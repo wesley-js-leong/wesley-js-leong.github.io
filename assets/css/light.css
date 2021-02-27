@@ -1,0 +1,79 @@
+/* Light color theme for personal website */
+
+* {
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #434343;
+}
+
+::selection {
+  color: white;
+  background: #434343;
+}
+
+body {
+	color: #1c1c1c;
+}
+
+#footer {
+	background-color: white;
+}
+
+.footer-text {
+	color: #adadad;
+}
+
+.btn-darkmode {
+	color: #1c1c1c;
+	background-color: white;
+}
+
+.btn-darkmode:hover {
+	color: white;
+	background-color: #1c1c1c;
+}
+
+p a {
+	color: #464ec2;
+}
+
+#profile-pic {
+    border: 3px solid #1c1c1c;
+}
+
+#profile-links a {
+	color: #1c1c1c;
+}
+
+.nav a {
+	color: #1c1c1c;
+}
+
+.nav a:hover {
+    color: #c7c8d6;
+}
+
+.nav a.active {
+	border-bottom: 3px solid #1c1c1c;
+}
+
+h1 {
+	background-color: #1c1c1c;
+	color: white;
+}
+
+/* art */
+.art-column a {
+	color: #1c1c1c;
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+	background-color: rgba(255, 255, 255, 0.075);
+}
+
+.art-column a h3 {
+	color: #1c1c1c;
+}

@@ -8,9 +8,11 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-		<link rel="stylesheet" href="assets/css/main.css" id="theme-link">
-		<link rel="stylesheet" href="assets/css/mfglabs_iconset.css">
-		<link rel="stylesheet" href="assets/css/academicons.min.css"/>
+		<link rel="stylesheet" href="assets/css/mobile.css" media="(max-width: 1080px)"  type="text/css">
+		<link rel="stylesheet" href="assets/css/main.css" media="(min-width: 1080px)" type="text/css">
+		<link rel="stylesheet" href="assets/css/light.css" id="theme-link" type="text/css">
+		<link rel="stylesheet" href="assets/css/mfglabs_iconset.css" type="text/css">
+		<link rel="stylesheet" href="assets/css/academicons.min.css" type="text/css">
 
 	    <script>
 	    	if (localStorage.getItem('theme') !== null) {
@@ -25,16 +27,35 @@
 		
 	</head>
 	<body>
-		<div class="nav">
-			<a href="index" class="bold">Home</a>
-			<div class="nav-right">
+		<div class="nav-desktop">
+			<div class="nav">
+				<a href="index" class="bold">Home</a>
+				<div class="nav-right">
+					<a href="publications">Publications</a>
+					<a href="presentations" class="active">Presentations</a>
+					<a href="art">Art</a>
+					<a href="https://drive.google.com/file/d/1Lx0XK_sWesn0fcAHxlTKpYh_bcjTSyRr/view?usp=sharing" target="_blank">CV</a>
+					<a href="contact">Contact</a>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="nav-mobile">
+		    <button class="drop-button icon icon-reorder icon5x" onclick="showNav()">
+		    </button>
+		    <div class="dropdown-content" id="myDropdown">
+				<a href="index">Home</a>
 				<a href="publications">Publications</a>
-				<a href="presentations" class="active">Presentations</a>
+				<a href="presentations" class="bold900">Presentations</a>
 				<a href="art">Art</a>
 				<a href="https://drive.google.com/file/d/1Lx0XK_sWesn0fcAHxlTKpYh_bcjTSyRr/view?usp=sharing" target="_blank">CV</a>
 				<a href="contact">Contact</a>
 			</div>
 		</div>
+
+
+
  		<div class="content">
 			<h2>Posters</h2>
 			<p>Gundran, A., Hsu, WY., Biane, J., Leong, W. , Williams, T., & Wingeier, B. (2019). Effect of tDCS on cerebral blood flow utilizing concurrent fNIRS: A series of pilot studies. Poster presented at Neuromodulation: the Science & New York City Neuromodulation (joint meeting) 2019, Napa, California.</p>
@@ -57,15 +78,32 @@
 	    	const theme = document.querySelector("#theme-link");
 	    	btn.addEventListener("click", function() {
 	    		// Swap out the URL for the different stylesheets
-		        if (theme.getAttribute("href") == "assets/css/main.css") {
+		        if (theme.getAttribute("href") == "assets/css/light.css") {
 		        	theme.href = "assets/css/dark.css";
 		        	localStorage.setItem('theme', 'assets/css/dark.css');
 		        } else {
-		        	theme.href = "assets/css/main.css";
-		        	localStorage.setItem('theme', 'assets/css/main.css');
+		        	theme.href = "assets/css/light.css";
+		        	localStorage.setItem('theme', 'assets/css/light.css');
 		        }
 	      	});
 		</script>
 
+		<script>
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function showNav() {
+			    document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(e) {
+			  	if (!e.target.matches('.drop-button')) {
+			  	var myDropdown = document.getElementById("myDropdown");
+		    	if (myDropdown.classList.contains('show')) {
+		      		myDropdown.classList.remove('show');
+			    }
+			  }
+			}
+		</script>
 	</body>	
 </html>	
