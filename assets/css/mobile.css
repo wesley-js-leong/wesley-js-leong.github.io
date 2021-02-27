@@ -90,13 +90,13 @@ a {
 	margin-bottom: 20px;
 	/*height: auto; */
 	width: 40%;
-	max-width: 16em;
+	max-width: 40vw;
 	margin-bottom: 10vw;
 	/*background-color: yellow;*/
 }
 
 #profile-pic {
-    max-width: 16em; 
+    max-width: 40vw; 
     height: auto;
     margin-bottom: 10px;
 }
@@ -170,6 +170,7 @@ h1 {
 	font-weight: 900;
 	font-size: 8vw;
 	margin-bottom: 0.2em;
+	padding: 2vw;
 }
 
 h2 {
