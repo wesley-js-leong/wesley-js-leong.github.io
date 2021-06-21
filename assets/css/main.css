@@ -35,7 +35,16 @@ body {
 	font-size: 14px;
 }
 
+.btn-publication {
+	cursor: pointer;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	transition-duration: 0.3s;
+}
+
 .btn-darkmode {
+	cursor: pointer;
 	outline: none;
 	border: none;
 	border-radius: 10px;

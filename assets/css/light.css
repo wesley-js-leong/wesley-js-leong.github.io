@@ -52,6 +52,12 @@ body {
 	color: #adadad;
 }
 
+.btn-publication {
+	/*color: #1c1c1c;*/
+	color: #464ec2;
+	background-color: white;
+}
+
 .btn-darkmode {
 	color: #1c1c1c;
 	background-color: white;
@@ -60,6 +66,10 @@ body {
 .btn-darkmode:hover {
 	color: white;
 	background-color: #1c1c1c;
+}
+
+h3 a {
+	color: #464ec2;
 }
 
 p a {
