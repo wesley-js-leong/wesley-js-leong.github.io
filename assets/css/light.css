@@ -67,13 +67,46 @@ body {
 	color: white;
 	background-color: #1c1c1c;
 }
-
+/*
 h3 a {
 	color: #464ec2;
+}*/
+
+.link {
+   /* RESET */
+   text-decoration: none;
+   /*line-height: 1;*/
+   
+   position: relative;
+   z-index: 0;
+   display: inline-block;
+   /*padding: 0px 2px;*/
+   overflow: hidden;
+   color: #1c1c1c;
+   vertical-align: bottom;
+   transition: color .3s ease-out;
 }
 
-p a {
-	color: #464ec2;
+.link::before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   transform: translateY(calc(100% - 1px));
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(60deg, #4cebd0 0%, #4cebd0 100%);
+   transition: transform .1s ease-out;
+}
+
+.link:hover { 
+   color: #1c1c1c; 
+}
+
+.link:hover::before {
+   transform: translateY(50%);
+   transition: transform .1s ease-out;
 }
 
 #profile-pic {
