@@ -15,14 +15,21 @@
 		<link rel="stylesheet" href="assets/css/academicons.min.css" type="text/css">
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7RN7HS804C"></script>
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-7RN7HS804C"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 
 		  gtag('config', 'G-7RN7HS804C');
-		</script>
+		</script> -->
+
+		<!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
+		<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+
+		<!-- Load the element definition -->
+		<script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+
 
 	    <script>
 	    	if (localStorage.getItem('theme') !== null) {
@@ -38,16 +45,11 @@
 	</head>
 	<body>
 		<div class="nav-desktop">
-			<div class="nav">
-				<a href="index" class="active bold">Home</a>
-				<div class="nav-right">
-					<a href="publications">Publications</a>
-					<a href="presentations">Presentations</a>
-					<a href="art">Art</a>
-					<a href="https://drive.google.com/file/d/1Lx0XK_sWesn0fcAHxlTKpYh_bcjTSyRr/view?usp=sharing" target="_blank">CV</a>
-					<a href="contact">Contact</a>
-				</div>
-			</div>
+			<a href="index" id="name">Wesley Leong</a>
+			<a href="publications">Publications</a>
+			<a href="presentations">Presentations</a>
+			<a href="design-portfolio">Art</a>
+			<a href="contact">Contact</a>
 		</div>
 
 
@@ -55,64 +57,117 @@
 		    <button class="drop-button icon icon-reorder icon3x" onclick="showNav()">
 		    </button>
 		    <div class="dropdown-content" id="myDropdown">
-				<a href="index" class="bold900">Home</a>
+				<a href="index" class="bold900">Wesley Leong</a>
 				<a href="publications">Publications</a>
 				<a href="presentations">Presentations</a>
 				<a href="art">Art</a>
-				<a href="https://drive.google.com/file/d/1Lx0XK_sWesn0fcAHxlTKpYh_bcjTSyRr/view?usp=sharing" target="_blank">CV</a>
 				<a href="contact">Contact</a>
 			</div>
 		</div>
 
 
-
-
  		<div class="home content">
+			
+
 			<div id="profile">
-				<img id="profile-pic" src="assets/images/profile-pic.png" alt="" />
+				<!-- <img id="profile-pic" src="assets/images/profile-pic.png" alt="" /> -->
 				<div id="profile-links">
 					<a href="contact" class="icon icon-mail  icon2x"></a>
-					<a href="https://twitter.com/wesleyjsleong" class="icon icon-twitter icon2x"></a>
-					<a href="https://linkedin.com/in/wesley-leong/" class="icon icon-linked_in  icon2x"></a>
-					<a href="https://github.com/wesley-js-leong" class="icon icon-octopus icon2x"></a>
-					<a href="https://scholar.google.com/citations?user=1hKSp3AAAAAJ" class="ai ai-google-scholar ai-2x"></a>
+					<a href="https://drive.google.com/file/d/1Lx0XK_sWesn0fcAHxlTKpYh_bcjTSyRr/view" target="_blank" class="ai ai-cv ai-2x"> </a>
+					<a href="https://twitter.com/wesleyjsleong" target="_blank" class="icon icon-twitter icon2x"></a>
+					<a href="https://linkedin.com/in/wesley-leong/" target="_blank" class="icon icon-linked_in  icon2x"></a>
+					<a href="https://github.com/wesley-js-leong" target="_blank" class="icon icon-octopus icon2x"></a>
+					<a href="https://scholar.google.com/citations?user=1hKSp3AAAAAJ" target="_blank" class="ai ai-google-scholar ai-2x"></a>
 				</div>
 			</div>
 			<div>
-				<h1>Hi! I'm Wesley Leong.&nbsp;</h1>
-				<h2>My pronouns are he/him/his.</h2>
-				<h3>I am a Psychology PhD student at the University of Connecticut, studying <a href="https://langcog.psychology.uconn.edu/" class="link">Language and Cognition</a>. I am advised by <a href="https://altmann.lab.uconn.edu/" class="link">Gerry Altmann</a>. I work on topics at the intersection of neuroscience, computation, and language, and am currently interested in how the brain understands and represents events in language.</h3>
+				
+				<!-- Simply set the `src` attribute to your MD file and win -->
+				<zero-md src="homepage.md">
+					<!-- Wrap with a <template> tag -->
+					<template>
+						<style>
+							* {
+								font-family: 'EB Garamond', serif;
+							}
+							
+							hr {
+								border-top: 1px solid #8c8c8c;
+							}
 
-				<p>Previously, I was a research engineer at <a href="https://haloneuro.com" class="link">Halo Neuroscience</a> in San Francisco. There, I used a combination of behavioral and neuroimaging methods to study the effects of transcranial electrical stimulation on human performance. I also wrote Python code for research uses such as experiment presentation, data analysis, and deep learning.</p>
+							h1 {
+								display: inline-block;
+								font-weight: 900;
+								font-size: 36px;
+								margin-bottom: 0.2em;
+							}
 
-				<p>Before that, I graduated from New York University with a BS in Neuroscience. My thesis was on cerebellar time perception, which I wrote while in 
-					<a href="https://ericlanglab.weebly.com/" class="link">Eric Lang's Lab</a>. I also did some work in linguistics, including an MEG study in the <a href="https://wp.nyu.edu/neurolinglab/" class="link">Neurolinguistics Lab</a> and a <a href="http://journals.ed.ac.uk/lifespansstyles/article/view/5642" class="link">funded project</a> on tense variation in Singapore English.</p>
+							h2 {
+								font-weight: 700;
+								font-size: 28px;
+								margin-bottom: 1em;
+								letter-spacing: -.02em;
+							}
 
-				<p>On a related note, I am from the tiny island nation of <a href="https://www.tripzilla.com/singapore-worlds-best-city-for-street-food" class="link">Singapore</a>.</p>
+							h3 {
+								font-size: 24px;
+								margin-bottom: 1em;
+								letter-spacing: -.02em;
+							}
 
+							p {
+								font-weight: 400;
+								font-size: 20px;
+								line-height: 1.2em;
+								margin-bottom: 1em;
+								letter-spacing: -.02em;
+							}
 
-				<br><br><br><br><br>
+							a {
+							   /* RESET */
+							   text-decoration: none;
+							   /*line-height: 1;*/
+							   
+							   position: relative;
+							   z-index: 0;
+							   display: inline-block;
+							   /*padding: 0px 2px;*/
+							   overflow: hidden;
+							   color: #000000;
+							   vertical-align: bottom;
+							   transition: color .3s ease-out;
+							}
+
+							a::before {
+							   content: "";
+							   position: absolute;
+							   z-index: -1;
+							   top: 0;
+							   left: 0;
+							   transform: translateY(calc(100% - 1px));
+							   width: 100%;
+							   height: 100%;
+							   background-image: linear-gradient(60deg, #00FFD0 0%, #00FFD0 100%);
+							   transition: transform .1s ease-out;
+							}
+
+							a:hover { 
+							   color: #000000; 
+							}
+
+							a:hover::before {
+							   transform: translateY(50%);
+							   transition: transform .1s ease-out;
+							}
+
+						</style>
+					</template>
+				</zero-md>
 			</div>
 		</div>
 		<div id="footer">
-  			<span style="float:left;"><button class="btn-darkmode icon icon-color_balance icon2x"></button></span>
-  			<span style="float:right;" class="footer-text">Last updated Sep 2021</span>
+  			<span style="float:right;" class="footer-text">© 2021 Wesley Leong</span>
 		</div>
-
-		<script>
-	    	const btn = document.querySelector(".btn-darkmode");
-	    	const theme = document.querySelector("#theme-link");
-	    	btn.addEventListener("click", function() {
-	    		// Swap out the URL for the different stylesheets
-		        if (theme.getAttribute("href") == "assets/css/light.css") {
-		        	theme.href = "assets/css/dark.css";
-		        	localStorage.setItem('theme', 'assets/css/dark.css');
-		        } else {
-		        	theme.href = "assets/css/light.css";
-		        	localStorage.setItem('theme', 'assets/css/light.css');
-		        }
-	      	});
-		</script>
 
 		<script>
 			/* When the user clicks on the button, 

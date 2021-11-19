@@ -15,14 +15,20 @@
 		<link rel="stylesheet" href="assets/css/academicons.min.css" type="text/css">
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7RN7HS804C"></script>
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-7RN7HS804C"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 
 		  gtag('config', 'G-7RN7HS804C');
-		</script>
+		</script> -->
+
+		<!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
+		<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+
+		<!-- Load the element definition -->
+		<script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
 
 	    <script>
 	    	if (localStorage.getItem('theme') !== null) {
@@ -38,16 +44,11 @@
 	</head>
 	<body>
 		<div class="nav-desktop">
-			<div class="nav">
-				<a href="index" class="bold">Home</a>
-				<div class="nav-right">
-					<a href="publications">Publications</a>
-					<a href="presentations">Presentations</a>
-					<a href="art" class="active">Art</a>
-					<a href="https://drive.google.com/file/d/1Lx0XK_sWesn0fcAHxlTKpYh_bcjTSyRr/view?usp=sharing" target="_blank">CV</a>
-					<a href="contact">Contact</a>
-				</div>
-			</div>
+			<a href="index" id="name">Wesley Leong</a>
+			<a href="publications">Publications</a>
+			<a href="presentations">Presentations</a>
+			<a href="art">Art</a>
+			<a href="contact">Contact</a>
 		</div>
 
 
@@ -55,22 +56,12 @@
 		    <button class="drop-button icon icon-reorder icon5x" onclick="showNav()">
 		    </button>
 		    <div class="dropdown-content" id="myDropdown">
-				<a href="index">Home</a>
+				<a href="index" id="name">Wesley Leong</a>
 				<a href="publications">Publications</a>
 				<a href="presentations">Presentations</a>
 				<a href="art" class="bold900">Art</a>
-				<a href="https://drive.google.com/file/d/1Lx0XK_sWesn0fcAHxlTKpYh_bcjTSyRr/view?usp=sharing" target="_blank">CV</a>
 				<a href="contact">Contact</a>
 			</div>
-		</div>
-
-
-
-		<div class="content">
-			<p>I also paint sometimes, mostly in acrylic. Here are some of my works!</p>
-			<br><br>
-			<br><br>
-			<br><br>
 		</div>
  		<div class="art-container">
 			<div class="art-column">
@@ -99,23 +90,8 @@
 			</div>
 		</div>
 		<div id="footer">
-  			<span style="float:left;"><button class="btn-darkmode icon icon-color_balance icon2x"></button></span>
-  			<span style="float:right;" class="footer-text">Last updated Sep 2021</span>
+  			<span style="float:right;" class="footer-text">© 2021 Wesley Leong</span>
 		</div>
-		<script>
-	    	const btn = document.querySelector(".btn-darkmode");
-	    	const theme = document.querySelector("#theme-link");
-	    	btn.addEventListener("click", function() {
-	    		// Swap out the URL for the different stylesheets
-		        if (theme.getAttribute("href") == "assets/css/light.css") {
-		        	theme.href = "assets/css/dark.css";
-		        	localStorage.setItem('theme', 'assets/css/dark.css');
-		        } else {
-		        	theme.href = "assets/css/light.css";
-		        	localStorage.setItem('theme', 'assets/css/light.css');
-		        }
-	      	});
-		</script>
 
 		<script>
 			/* When the user clicks on the button, 

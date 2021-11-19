@@ -117,18 +117,6 @@ h3 a {
 	color: #1c1c1c;
 }
 
-.nav a {
-	color: #1c1c1c;
-}
-
-.nav a:hover {
-    color: #c7c8d6;
-}
-
-.nav a.active {
-	border-bottom: 3px solid #1c1c1c;
-}
-
 h1 {
 	background-color: #1c1c1c;
 	color: white;
