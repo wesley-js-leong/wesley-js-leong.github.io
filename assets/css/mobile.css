@@ -105,6 +105,12 @@ a {
 	/*background-color: yellow;*/
 }
 
+#profile-pic {
+    max-width: 40vw; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
 #profile-links {
 	display: flex;
 	justify-content: space-between;

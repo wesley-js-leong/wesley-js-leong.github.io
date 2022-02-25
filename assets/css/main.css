@@ -1,7 +1,7 @@
 /* main css styling for personal website */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,700;1,900&display=swap');*/
 
 * {
 	margin: 0;
@@ -11,16 +11,11 @@
 }
 
 body {
-	font-family: "Montserrat", "Times New Roman", sans-serif;
+	font-family: "Lato", "Times New Roman", sans-serif;
 }
 
 .nav-mobile {
 	display: none;
-}
-
-#name {
-	font-family: "Montserrat", "Lato" sans-serif;
-	font-size: 60;
 }
 
 #footer {
@@ -48,19 +43,23 @@ body {
 	transition-duration: 0.3s;
 }
 
+.btn-darkmode {
+	cursor: pointer;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	padding: 0px 3px;
+	transition-duration: 0.3s;
+}
+
 a {
 	text-decoration: none;
 }
 
 #profile {
-	display: block;
-	align-content: center;
-	width: 15em;
-	margin-bottom: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	/*height: auto; */
-    /*width: auto; */
+	margin-right: 80px;
+	height: auto; 
+    width: auto; 
 }
 
 #profile-pic {
@@ -75,7 +74,7 @@ a {
 }
 
 .home {
-	display: block;
+	display: flex;
 	justify-content: space-around;
 }
 
@@ -87,26 +86,41 @@ a {
 	font-weight: 700;
 }
 
-.nav-desktop {
-	display: flex;
-	margin: 1vw 15vw 0 15vw;
-	width: 70%;
-	justify-content: space-between;
+.nav {
+	font-size: 20px;
+	/*width: 50%;*/
+	margin: 50px 25vw 0 25vw;
 	text-decoration: none;
 }
 
-.nav-desktop a {
-	color: #1c1c1c;
-	margin: 0.5em;
-	font-size: 20px;
-	align-self: flex-end;
+.nav a {
+	display: inline;
+	float: left;
+    text-align: center;
+    margin: 15px 0px; /* to flush edge of menu with right boundary */
 }
 
-.nav-desktop a:first-child {
-	margin: 0;
-	margin-right: auto;
-	font-size: 50px;
-	align-self: flex-end;
+.nav a.active {
+	/*color: #9697ab;*/
+	border-bottom: 3px solid #1c1c1c;
+	padding-bottom: 8px;
+}
+
+.nav a:hover {
+	transition-duration: 0.3s;
+}
+
+.nav-right {
+    float: right;
+}
+
+.nav-right a {
+	display: inline;
+    margin: 15px 10px;
+}
+
+.nav-right a:last-child {
+	margin: 15px 0 15px 10px; /* to flush edge of menu with right boundary */
 }
 
 h1 {
@@ -138,7 +152,7 @@ p {
 
 .content {
 	position: absolute;
-	margin: 5vw 25vw 0 25vw;
+	margin: 150px 25vw 0 25vw;
 }
 
 
