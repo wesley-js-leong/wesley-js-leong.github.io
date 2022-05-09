@@ -129,11 +129,11 @@ h3 a {
 .nav a.active {
 	border-bottom: 3px solid #c4c4cc;
 }
-
+/*
 h1 {
 	background-color: #c4c4cc;
 	color: #181924;
-}
+}*/
 
 /* art */
 .art-column a {

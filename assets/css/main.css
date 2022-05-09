@@ -21,13 +21,13 @@ body {
 #footer {
 	display: block;
 	position: fixed;
-	margin-left: 25%;
-	margin-right: 25%;
+	margin-left: 20%;
+	margin-right: 20%;
 	margin-bottom: 1em;
 	bottom: -20px;
 	padding-top: 10px;
 	padding-bottom: 20px;
-	width: 50%;
+	width: 60%;
 	z-index: 5;
 }
 
@@ -89,7 +89,7 @@ a {
 .nav {
 	font-size: 20px;
 	/*width: 50%;*/
-	margin: 50px 25vw 0 25vw;
+	margin: 50px 20vw 0 20vw;
 	text-decoration: none;
 }
 
@@ -129,7 +129,7 @@ h1 {
 	font-weight: 900;
 	font-size: 36px;
 	margin-bottom: 0.2em;
-	padding: 0.3vw;
+	/*padding: 0.3vw;*/
 }
 
 h2 {
@@ -152,7 +152,7 @@ p {
 
 .content {
 	position: absolute;
-	margin: 150px 25vw 0 25vw;
+	margin: 150px 20vw 0 20vw;
 }
 
 
@@ -160,7 +160,7 @@ p {
 
 .art-container {
 	position: absolute;
-	margin: 200px 25vw 0 25vw;
+	margin: 200px 20vw 0 20vw;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;

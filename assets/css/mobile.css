@@ -106,13 +106,15 @@ a {
 }
 
 #profile-pic {
-    max-width: 40vw; 
+    max-width: 25vw; 
+    min-width: 15vw; 
     height: auto;
     margin-bottom: 10px;
 }
 
 #profile-links {
 	display: flex;
+    max-width: 25vw; 
 	justify-content: space-between;
 }
 
@@ -178,25 +180,30 @@ h1 {
 	display: inline-block;
 	font-style: italic;
 	font-weight: 900;
-	font-size: 8vw;
-	margin-bottom: 0.2em;
-	padding: 2vw;
+	font-size: 32px;
+/*	margin-left: 10%;
+	margin-right: 10%;*/
+	margin-bottom: .5em;
+	text-align: center;
+	/*padding: 2vw;*/
 }
 
 h2 {
 	font-weight: 700;
-	font-size: 6.5vw;
+	font-size: 28px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 1em;
 }
 
 h3 {
-	font-size: 5.5vw;
+	font-size: 20px;
 	margin-bottom: 1em;
 }
 
 p {
 	font-weight: 400;
-	font-size: 5vw;
+	font-size: 18px;
 	line-height: 1.2em;
 	margin-bottom: 1em;
 }
